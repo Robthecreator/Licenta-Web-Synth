@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import './App.css'
 import axios from "axios";
+import Studio from './pages/Studio.jsx'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -17,24 +18,7 @@ function App() {
     fetchAPI();
   }, []);
 
-  return (
-    <>
-      <section id="center">
-        
-        <div>
-          <h1>Web Synth</h1>
-          {
-            array.map((fruit, index) => (
-              <div key = {index}>
-                <p>{fruit}</p>
-                <br></br>
-              </div>
-            ))
-          }
-        </div>
-      </section>
-    </>
-  )
+  return <Studio />;
 }
 
 export default App

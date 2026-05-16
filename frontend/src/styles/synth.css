@@ -1,0 +1,152 @@
+/* KEYBOARD CUSTOMIZATION */
+.keyboard {
+  position: relative;
+  display: flex;
+  height: 120px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.key.white {
+  width: 44px;
+  height: 100%;
+  background: white;
+  border: 1px solid #333;
+  border-radius: 0 0 4px 4px;
+  cursor: pointer;
+  flex-shrink: 0;
+  box-sizing: border-box;
+}
+
+.key.black {
+  position: absolute;
+  top: 0;
+  width: 24px;
+  height: 62%;
+  background: #222;
+  border-radius: 0 0 3px 3px;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.whitePressed {
+  background: #aad4f5 !important;
+}
+
+.blackPressed {
+  background: #1a6fa8 !important;
+}
+
+/* KNOB CUSTOMIZATION */
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.label {
+  font-size: 9px;
+  letter-spacing: 1.2px;
+  color: #999;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.adsrKnobs {
+  display: flex;
+  gap: 40px;
+  flex-wrap: nowrap;
+}
+
+/* PANEL CUSTOMIZATION */
+.panel {
+  background: #3a3a3a;
+  border-radius: 6px;
+  padding-bottom: 6px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.knobs {
+  display: flex;
+  gap: 12px;
+  flex-wrap: nowrap;
+}
+
+.knobsGrid {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  flex: 1;
+}
+
+.knobsRow {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex: 1;
+}
+
+.knobsRow > * {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.adsrVisual {
+  margin-bottom: 8px; 
+  border: 1px solid #555; 
+  border-radius: 3px; 
+  background: #2a2a2a;
+}
+
+/* SYNTH BODY */
+.chassis {
+  background: #4a4a4a;
+  border-radius: 12px;
+  padding: 16px;
+  display: grid;
+  grid-template-rows: auto auto auto;
+  flex-direction: column;
+  gap: 8px;
+  width: fit-content;
+  user-select: none;
+}
+
+.topRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 6px;
+}
+
+.bottomRow {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 6px;
+}
+
+/* BUTTON CUSTOMIZATION */
+.typeButton {
+  background: #2a2a2a;
+  border: 1px solid #666;
+  border-radius: 4px;
+  color: #ccc;
+  font-size: 10px;
+  letter-spacing: 2px;
+  padding: 6px 10px;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: background 0.15s;
+  width: 100px;
+  margin-bottom: 6px;
+}
+
+.typeButton:hover {
+  background: #444;
+}
+
+.typeButton:active {
+  background: #555;
+}
